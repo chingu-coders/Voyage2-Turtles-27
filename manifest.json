@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension Boiler",
+  "description": "A boiler made by @mrbrackins",
+  "version": "0.0.0.1",
+  "background": {
+    "scripts": [
+      "event.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Chrome Boiler",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ],
+  "chrome_url_overrides": {
+      "newtab": "index.html"
+    }
+}
