@@ -1,12 +1,17 @@
-var app = document.getElementById('app');
+document.body.innerHTML = '</head><body><div id="mainContent"><p id="clock">Time should go here</p></div>';
 
-const anchor = document.createElement('div');
-anchor.id = 'app';
+var myText = document.getElementById("clock");
 
-document.body.insertBefore(anchor, document.body.childNodes[0]);
-document.getElementById('app').innerHTML += '<br>Some new content!';
+function doSomething() {
+    var d = new Date();
+    var clock = d.getTime();
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+    var seconds = d.getSeconds();
+    var day = d.getDate();
+    myText.textContent = hours + ":" + minutes + ":" + seconds;
+}
 
-// Content Script or popup
-chrome.runtime.sendMessage({greeting: "hello"}, function(response){
-  console.log(response);
-});
+setInterval(function(){
+    doSomething();
+}, 1000);
