@@ -1,33 +1,25 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--,
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
+
+                                                ,'
+                                              ,;
+                                            .'/
+       `-_                                .'.'
+         `;-_                           .' /
+           `.-.        ,_.-'`'--'`'-._.` .'
+             `.`-.    /    .'"'.   _.'  /
+               `. '-.'_.._/0 " 0\/`    {\
+                 `.      |'-^Y^- |     //
+                  (`\     \_."._/\...-;..-.
+                  `._'._,'` ```    _.:---''`
+                     ;-....----'''`
+                    /   (
+               27   |  (`
+                    `.^'
+
     -----------------------------------------------------------------
 
+Production: https://chingu-coders.github.io/Voyage2-Turtles-27/index.html
+Dev: https://team-turtle-27-jxhdev.c9users.io/Voyage2-Turtles-27/index.html
+Team: @mrbrackins @octopinky @jxhdev
 
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
 # Voyage2-Turtles-27
-=======
-## 1. go to chrome://extensions
-## 2. make sure to enable dev mode
-## 3. load unpacked extension.
-## 4. Use it!
