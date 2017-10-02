@@ -90,13 +90,16 @@ display: none;
 	outline: none;
 	border: none;
 	border: 1px solid rgb(28, 27, 28);
+	display: none;
 }
-
+#todo {
+	width: 15%;
+}
 .todo_input:focus{
 	/*background: white;*/
 	outline: none;
 
-	border: 1px solid rgba(255, 255, 255, 0);
+	border: 1px solid rgb(84, 52, 84);
 
 }
 
@@ -120,5 +123,46 @@ display: none;
     font-family: helvetica;
 }
 
+.todo_X {
+	margin-right: 20px;
+background: rgba(255, 0, 0, 0.8);
+height: 40px;
+text-align: center;
+color: white;
+display: inline-block;
+width: 0px;
+opacity: 0;
+
+transition: .2s linear;
+}
+
 
 /** TODO APP End  **/
+
+.icon-plus  {
+	float: right;
+	margin: 2% 0 2% 0;
+}
+.icon-trash{
+
+
+    /*color: rgb(43, 58, 65);*/
+
+width: 0;
+
+}
+
+.icon-trash:hover {
+	color: grey;
+	transition: .5s linear;
+
+}
+
+span {
+
+}
+
+li:hover .todo_X {
+	width: 40px;
+	opacity: 1;
+}
