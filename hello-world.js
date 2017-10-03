@@ -1,4 +1,18 @@
 $(document).ready(function(){
+/***
+*Weather widget
+**/
+
+$.getJSON("https://freegeoip.net/json/", function(json) {
+    $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + json.latitude + "&lon=" + json.longitude + "&units=imperial&appid=03f010544045f1772f781cfaf70d9cdd", function(x) {
+      var f = Math.round(x.main.temp) * 100 / 100;
+        console.log(f);
+    $("#weather").html(" <div><img src='http://openweathermap.org/img/w/" + x.weather[0].icon + ".png'/><span> | "+f+"&deg; F</span></div>");
+  });
+});
+/***
+*TODO widget
+**/
   //login to firebase
   var email = 'tony@mrbrackins.com';
   var password = 'P@ssword1';
@@ -46,13 +60,32 @@ $(document).ready(function(){
     };
   });
 
+  var loaded = false;
+
   $('#fetchTodos').click(function(){
+
     console.log('from #fetchtodos')
-    fetchTodos();
+    if(loaded == false){
+      fetchTodos();
+    }
+    loaded = true;
     $('#todo_container').toggle({'display': 'none'});
-    $(this).toggle({'display': 'none'});
+    // $(this).toggle({'display': 'none'});
 
   });
+
+//toggle todo input
+
+$('.icon-plus').click(function(){
+
+  $('.todo_input').fadeToggle();
+
+
+});
+
+
+
+
 });
 
 
@@ -138,7 +171,7 @@ function fetchTodos() {
 
 
     _.map(the_objects, function(val, uid){
-      return  $('.todo_list').prepend('<li class="todo_item" uid='+ snapshot.key+' "><span class="todo_X">X</span> ' + the_objects.todo.todo +  ' </li>');
+      return  $('.todo_list').prepend('<li class="todo_item" uid='+ snapshot.key+' "><span class="todo_X"><i class="icon-trash"></i></span> ' + the_objects.todo.todo +  ' </li>');
 
       console.log('fetching todos from the function')
     })
