@@ -3,8 +3,8 @@ $(document).ready(function() {
    *Weather widget
    **/
 
-  $.getJSON("https://freegeoip.net/json/", function(json) {
-    $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + json.latitude + "&lon=" + json.longitude + "&units=imperial&appid=03f010544045f1772f781cfaf70d9cdd", function(x) {
+  $.getJSON("http://freegeoip.net/json/", function(json) {
+    $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + json.latitude + "&lon=" + json.longitude + "&units=imperial&appid=03f010544045f1772f781cfaf70d9cdd", function(x) {
       var f = Math.round(x.main.temp) * 100 / 100;
       console.log(f);
       $("#weather").html(" <div><img src='http://openweathermap.org/img/w/" + x.weather[0].icon + ".png'/><span> | " + f + "&deg; F</span></div>");
