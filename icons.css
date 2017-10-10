@@ -44,3 +44,6 @@
 .icon-trash:before {
   content: "\63";
 }
+.icon-cog:before {
+	content: "\38";
+}
