@@ -3,52 +3,24 @@
 	top:0px;
 	right:0px;
 	width:auto;
-	background:rgba(15,15,15,.925);
-}
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	color: white;
-	background-color: transparent;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
-
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;s
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
+	background:rgba(0,0,0,.3);
+	height:auto;
+	color:white;
 }
 body{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: stretch;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover
+	font-family: Arial, Helvetica, sans-serif;
+	background-attachment: fixed;
+	background-size: cover
+}
+#mainContent {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	top:50%;
+	font-size: 20vh;
+}
+#clock{
+	background:radial-gradient(circle at center, black 0, transparent 100%);
 }
 
 /** TODO APP  **/
@@ -56,7 +28,7 @@ body{
 #todo {
 	position: fixed;
 	bottom: 0;
-	right: 1%;
+	right: 0;
 }
 
 #todo_container {
@@ -66,9 +38,6 @@ width: 100%;
 box-shadow:  0 0 3px rgba(0,0,0,.1);
 margin: 40px auto;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-
-/*border: 2px solid rgba(167, 162, 162, 0.48);*/
 display: none;
 }
 
@@ -93,7 +62,6 @@ display: none;
 	color: #2980b9;
 	width: 100%;
 	box-sizing: border-box;
-	/*padding: 2px 2px 2px 5px;*/
 	outline: none;
 	border: none;
 	border: 1px solid rgb(28, 27, 28);
@@ -103,11 +71,8 @@ display: none;
 	width: 15%;
 }
 .todo_input:focus{
-	/*background: white;*/
 	outline: none;
-
 	border: 1px solid rgb(84, 52, 84);
-
 }
 
 .todo_list__nostyle {
@@ -139,7 +104,6 @@ color: white;
 display: inline-block;
 width: 0px;
 opacity: 0;
-
 transition: .2s linear;
 }
 
@@ -151,22 +115,12 @@ transition: .2s linear;
 	margin: 2% 0 2% 0;
 }
 .icon-trash{
-
-
-    /*color: rgb(43, 58, 65);*/
-
-width: 0;
-
+	width: 0;
 }
 
 .icon-trash:hover {
 	color: grey;
 	transition: .5s linear;
-
-}
-
-span {
-
 }
 
 li:hover .todo_X {
