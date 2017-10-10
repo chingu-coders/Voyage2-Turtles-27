@@ -1,54 +1,38 @@
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
 <html lang="en-us">
-
 <head>
-<meta charset="utf-8">
-<title>Hello...</title>
-
-<!-- link up icon fonts -->
-<link href="https://file.myfontastic.com/vNEofMnoPdHqZmaCDrDHhL/icons.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="hello-world.css">
-
-
-
+  <meta charset="utf-8">
+  <title>New Tab</title>
+  <!-- link up icon fonts -->
+  <link href="icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<div id="mainContent">
-<p id="clock"></p>
-<div id="weather">Weather</div>
-</div>
-<div id="todo">
-<div id="todo_container">
-  <strong><p class="todo_title todo_title__nomargin"> Todo <i class="icon-plus"></i></p></strong>
-  <input type="text" class="todo_input" placeholder="Add New">
-  <ul class="todo_list todo_list__nostyle">
-    <!-- <li class="todo_item"><span class="todo_X">X</span> Todo 1</li>
+  <div id="mainContent">
+    <p id="clock"></p>
+    <div id="weather">Weather</div>
+  </div>
+  <div id="todo">
+    <div id="todo_container">
+      <strong><p class="todo_title todo_title__nomargin"> Todo <i class="icon-plus"></i></p></strong>
+      <input type="text" class="todo_input" placeholder="Add New">
+      <ul class="todo_list todo_list__nostyle">
+        <!-- <li class="todo_item"><span class="todo_X">X</span> Todo 1</li>
     <li class="todo_item"><span class="todo_X">X</span> Todo 2</li>
     <li class="todo_item"><span class="todo_X">X</span> Todo 3</li> -->
 
-  </ul>
+      </ul>
 
-</div>
-<span id="fetchTodos">Todos</span>
-</div>
+    </div>
+    <span id="fetchTodos">Todos</span>
+  </div>
 
-<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCme9MK-BTv1dURRqnoDAAidRC8fyq_3Ac",
-    authDomain: "voyagetodo.firebaseapp.com",
-    databaseURL: "https://voyagetodo.firebaseio.com",
-    projectId: "voyagetodo",
-    storageBucket: "voyagetodo.appspot.com",
-    messagingSenderId: "871855599783"
-  };
-  firebase.initializeApp(config);
-</script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="hello-world.js"></script>
+  <script src="firebase.js"></script>
+  <script src="start.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="underscore-min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
