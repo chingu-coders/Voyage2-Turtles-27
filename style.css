@@ -2,25 +2,42 @@
 	position:absolute;
 	top:0px;
 	right:0px;
-	width:auto;
 	background:rgba(0,0,0,.3);
+	font-size: 2rem;
+}
+#picInfo{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background:rgba(0,0,0,.3);
+}
+#links{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,.3);
+}
+#quotes{
+	background:radial-gradient(circle at center, black 0, transparent 50%);
 	height:auto;
-	color:white;
+	font-size: 2rem;
+
+}
+#clock{
+	background:radial-gradient(circle at center, black 0, transparent 50%);
+  font-weight: bold;
+	font-size: 6rem;
 }
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	background-attachment: fixed;
-	background-size: cover
+	background-size: cover;
+  color: white;
+	font-size: 1.3rem;
 }
 #mainContent {
-	font-weight: bold;
-	color: white;
-	text-align: center;
-	top:50%;
-	font-size: 20vh;
-}
-#clock{
-	background:radial-gradient(circle at center, black 0, transparent 100%);
+  text-align:center;
+  padding-top:30vh;
 }
 
 /** TODO APP  **/

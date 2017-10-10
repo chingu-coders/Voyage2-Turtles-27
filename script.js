@@ -7,7 +7,7 @@ $(document).ready(function() {
     $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + json.latitude + "&lon=" + json.longitude + "&units=imperial&appid=03f010544045f1772f781cfaf70d9cdd", function(x) {
       var f = Math.round(x.main.temp) * 100 / 100;
       console.log(f);
-      $("#weather").html(" <div><img src='http://openweathermap.org/img/w/" + x.weather[0].icon + ".png'/><span> | " + f + "&deg; F</span></div>");
+      $("#weather").html(" <div><img src='http://openweathermap.org/img/w/" + x.weather[0].icon + ".png'/><span style='float:right; vertical-align:bottom;'> | " + f + "&deg; F</span></div>");
     });
   });
   /***
@@ -131,7 +131,7 @@ function changeBackground() {
     var responseJSON = JSON.parse(response);
     var randomImageUrl = responseJSON.urls.regular;
     document.querySelector('body').style.backgroundImage = 'url(' + randomImageUrl + ')';
-    // fetchTodos();
+    document.getElementById("picInfo").innerHTML=document.getElementById("picInfo").innerHTML+"<div>"+responseJSON.user.name+"</div><div id='location'>"+responseJSON.location.title+"</div>"
   });
 
 }
@@ -199,5 +199,3 @@ function getParent(snapshot) {
 
 
 changeBackground();
-
-console.log(_)
