@@ -1,5 +1,11 @@
 $(document).ready(function() {
   /***
+   *Random quotes
+   **/
+  $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
+   $("#quotes").html(" <div>"+a[0].content + "<p>— " + a[0].title + "</p>"+"</div>");
+});
+  /***
    *Weather widget
    **/
 
@@ -107,7 +113,6 @@ function doSomething() {
 
 setInterval(function() {
   doSomething();
-  console.log("do something");
 }, 1000);
 
 
@@ -199,3 +204,5 @@ function getParent(snapshot) {
 
 
 changeBackground();
+
+console.log(_)
